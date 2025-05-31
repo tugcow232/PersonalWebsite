@@ -12,15 +12,60 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: darkblue;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Centered main header */
+.header {
+  color: gray;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Centered image */
+.image {
+  display: block;
+  margin: 20px auto;
+  height: 50vh;
+}
+
+/* Section headers */
+.AHeader, .CHeader {
+  color: gray;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Flex container */
+#row {
+  display: flex;
+  justify-content: center; /* horizontally center children */
+  align-items: flex-start; /* align to top */
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card styles */
+.AboutMe, .ContactInfo {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Different background for ContactInfo */
+.ContactInfo {
+  background-color: #f0f0f0;
+}
+
+/* Optional name styling */
+.name {
+  color: blue;
 }
